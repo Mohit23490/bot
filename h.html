@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> Mohit 2.O </title>
+    <link rel="stylesheet" href="h.css">
+    <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined" rel="stylesheet" />
+</head>
+
+<body>
+    <button id="chat-toggler">
+        <span class="material-symbols-outlined">mode_comment</span>
+        <span class="material-symbols-outlined">close</span>
+        
+    </button>
+    <div class="chatbot-popup">
+        <div class="chat-header">
+
+            <div class="header-info">
+                <img class="chatbot-logo" width='25px' src="logo.svg" alt="">
+                <h2 class="logo-text"> MOHIT 2.0 </h2>
+
+            </div>
+            <button id="close-chatbot" class="material-symbols-outlined">
+                keyboard_arrow_down
+            </button>
+
+        </div>
+        <div class="chat-body">
+            <div class="message bot-message">
+                <img class="bot-avtar" width='25px' src="logo.svg" alt="">
+                <div class="message-text">
+                    hey there <br>how can i help you today
+                </div>
+            </div>
+
+        </div>
+        <div class="chat-footer">
+            <form action="#" class="chat-form">
+                <textarea placeholder="message ......." class="message-input" required></textarea>
+                <div class="chat-controls">
+                    <button type="button" id="emoji-pickers" class="material-symbols-outlined">
+                        sentiment_satisfied
+                    </button>
+                    <div class="file-upload-wrapper">
+                        <input type="file" accept="images/*" id="file-input" hidden>
+                        <img src="#" alt="">
+                        <button type="button" id="file-upload" class="material-symbols-outlined">attach_file</button>
+                        <button type="button" id="file-cancel" class="material-symbols-outlined">close</button>
+
+                    </div>
+
+                    <button type="submit" id="send-message" class="material-symbols-outlined">
+                        arrow_upward
+                    </button>
+                </div>
+            </form>
+
+
+        </div>
+    </div>
+    <script src="https://cdn.jsdelivr.net/npm/emoji-mart@latest/dist/browser.js"></script>
+    <script src="h.js">
+
+    </script>
+
+</body>
+
+</html>
